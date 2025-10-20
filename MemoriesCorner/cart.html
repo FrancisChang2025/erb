@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>購物車與結帳｜香港懷舊小食</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="data/products.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="logo">Memories Corner</a>
+    <div class="nav-links">
+      <a href="products.html">全部商品</a>
+      <a href="cart.html" class="cart-link active">購物車 <span id="nav-cart-count">0</span></a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>購物車</h1>
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-summary">
+      <div class="summary-line"><span>小計</span><span id="subtotal">$0</span></div>
+      <div class="summary-line"><span>運費（本地）</span><span id="shipping">$30</span></div>
+      <div class="summary-line total"><span>總計</span><span id="grand-total">$0</span></div>
+      <button id="clear-cart" class="btn btn-light">清空購物車</button>
+    </div>
+
+    <h2>結帳資料</h2>
+    <form id="checkout-form" class="checkout-form">
+      <div class="form-grid">
+        <div><label>姓名</label><input id="name" type="text" required /></div>
+        <div><label>電郵</label><input id="email" type="email" required /></div>
+        <div><label>電話</label><input id="phone" type="tel" required /></div>
+        <div class="full"><label>送貨地址</label><input id="address" type="text" required /></div>
+        <div><label>送貨方式</label>
+          <select id="delivery" required>
+            <option value="sf">順豐到付</option>
+            <option value="local">本地速遞</option>
+            <option value="pickup">門市自取</option>
+          </select>
+        </div>
+        <div><label>備註</label><input id="note" type="text" placeholder="有無特別要求？" /></div>
+      </div>
+      <button type="submit" class="btn btn-primary">確認結帳</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Memories Corner</p>
+  </footer>
+</body>
+</html>

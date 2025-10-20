@@ -1,0 +1,22 @@
+const products = [
+  { id:1, name:"馬仔（沙琪瑪）", image:"images/majai.jpg", gallery:["images/majai.jpg"], video:"", audio:"", origin:"港式糕餅代表", ingredients:"雞蛋、麵粉、糖、蜂蜜、植物油", method:"蛋麵條油炸至金黃，拌入糖漿與蜂蜜後定型，切塊即成。", description:"香甜軟糯，蛋香濃郁，是港式糕餅的代表。", price:28 },
+  { id:2, name:"蛋卷", image:"images/eggroll.jpg", gallery:["images/eggroll.jpg"], video:"", audio:"", origin:"港式茶點", ingredients:"雞蛋、牛油、麵粉、糖", method:"麵糊薄烤至金黃趁熱捲起。", description:"金黃酥脆，蛋香與牛油香交融。", price:35 },
+  { id:3, name:"南棗合桃糕", image:"images/datewalnut.jpg", gallery:["images/datewalnut.jpg"], video:"", audio:"", origin:"傳統滋補甜品", ingredients:"南棗泥、合桃、糯米粉、冰糖", method:"南棗泥煮濃稠混合糯米粉與合桃顆粒，冷卻定型。", description:"棗香濃郁，合桃顆粒豐富。", price:32 },
+  { id:4, name:"合桃酥", image:"images/walnutcookie.jpg", gallery:["images/walnutcookie.jpg"], video:"", audio:"", origin:"中式曲奇", ingredients:"麵粉、合桃、牛油、糖、蛋液", method:"麵團加入合桃碎，分割壓扁烤至酥香。", description:"酥香鬆脆，入口即化。", price:30 },
+  { id:5, name:"杏仁條", image:"images/almondstick.jpg", gallery:["images/almondstick.jpg"], video:"", audio:"", origin:"港式餅乾", ingredients:"杏仁、牛油、麵粉、糖、鹽", method:"麵糊抹平撒杏仁條烤至金黃。", description:"牛油與杏仁香氣濃郁，甜而不膩。", price:33 },
+  { id:6, name:"椰絲蛋白曲奇", image:"images/coconutcookie.jpg", gallery:["images/coconutcookie.jpg"], video:"", audio:"", origin:"唧花曲奇", ingredients:"椰絲、蛋白、牛油、糖、麵粉", method:"打發蛋白與牛油拌麵粉，擠花撒椰絲烤脆。", description:"唧花外型，椰絲清香，鬆脆可口。", price:34 },
+  { id:7, name:"雞蛋餅", image:"images/eggbiscuit.jpg", gallery:["images/eggbiscuit.jpg"], video:"", audio:"", origin:"懷舊中式餅乾", ingredients:"雞蛋、麵粉、糖、牛油", method:"蛋液與牛油拌勻麵粉，搓圓壓扁烤至香脆。", description:"圓扁形狀，香脆帶蛋香。", price:25 },
+  { id:8, name:"鳳凰卷", image:"images/phoenixroll.jpg", gallery:["images/phoenixroll.jpg"], video:"", audio:"", origin:"蛋卷變奏", ingredients:"雞蛋、麵粉、椰絲或海苔肉鬆", method:"薄烤蛋卷皮捲入餡料定型切段。", description:"椰絲餡或創新口味如海苔肉鬆。", price:36 },
+  { id:9, name:"中式老薑餅", image:"images/gingerbiscuit.jpg", gallery:["images/gingerbiscuit.jpg"], video:"", audio:"", origin:"冬季點心", ingredients:"薑汁、薑粒、麵粉、糖、牛油", method:"薑汁與薑粒入麵糰低溫烤製。", description:"薑香微辣，帶小薑粒。", price:29 },
+  { id:10, name:"杏仁餅", image:"images/almondcake.jpg", gallery:["images/almondcake.jpg"], video:"", audio:"", origin:"廣式糕點", ingredients:"綠豆粉、原粒杏仁、糖、油", method:"綠豆粉與糖拌油壓模焗定型。", description:"綠豆粉與原粒杏仁製成，香脆鬆化。", price:31 },
+  { id:11, name:"砵仔糕", image:"images/putzaigou.jpg", gallery:["images/putzaigou.jpg"], video:"", audio:"", origin:"街頭經典", ingredients:"黃糖、紅豆、粘米粉/糯米粉、水", method:"黃糖水與米粉拌入砵蒸熟，撒紅豆。", description:"紅豆與黃糖蒸製，質地軟糯。", price:22 },
+  { id:12, name:"芝麻卷（菲林卷）", image:"images/sesameroll.jpg", gallery:["images/sesameroll.jpg"], video:"", audio:"", origin:"茶樓甜品", ingredients:"黑芝麻、馬蹄粉、冰糖、水", method:"芝麻糊與馬蹄粉煮至半透明薄抹成片捲起。", description:"黑芝麻香濃，層層螺旋紋。", price:27 },
+  { id:13, name:"麥芽糖夾餅", image:"images/maltcookie.jpg", gallery:["images/maltcookie.jpg"], video:"", audio:"", origin:"街頭小食", ingredients:"餅乾、麥芽糖、花生碎", method:"餅乾夾熱麥芽糖與花生碎定型切片。", description:"外脆內軟，拉絲麥芽糖。", price:26 },
+  { id:14, name:"龍鬚糖", image:"images/dragonsbeard.jpg", gallery:["images/dragonsbeard.jpg"], video:"", audio:"", origin:"傳統手工糖", ingredients:"麥芽糖漿、澱粉、花生芝麻餡", method:"糖塊拉絲包裹花生芝麻餡。", description:"糖絲細如龍鬚，入口即化。", price:38 },
+  { id:15, name:"冷糕", image:"images/coldcake.jpg", gallery:["images/coldcake.jpg"], video:"", audio:"", origin:"潮州甜品", ingredients:"糯米粉、糖、芝麻、花生碎", method:"糯米漿煎成外脆內軟糕片夾餡。", description:"外脆內軟，夾著芝麻花生碎。", price:30 },
+  { id:16, name:"茶粿", image:"images/teacake.jpg", gallery:["images/teacake.jpg"], video:"", audio:"", origin:"客家小食", ingredients:"糯米粉、糭葉、甜或鹹餡", method:"糯米皮包餡蒸熟帶糭葉清香。", description:"糯米外皮，鹹甜皆有。", price:32 },
+  { id:17, name:"糖蔥餅", image:"images/sugaronion.jpg", gallery:["images/sugaronion.jpg"], video:"", audio:"", origin:"街頭甜品", ingredients:"糖條、花生碎、白麵皮", method:"薄麵皮包入糖蔥與花生碎捲起。", description:"甜而不膩，口感有層次。", price:28 },
+  { id:18, name:"紙包蛋糕", image:"images/papereggcake.jpg", gallery:["images/papereggcake.jpg"], video:"", audio:"", origin:"港式海綿蛋糕", ingredients:"雞蛋、低粉、糖、油/牛油", method:"打發蛋糊入紙杯烘焙，組織細緻。", description:"蛋香濃郁，口感細滑。", price:24 },
+  { id:19, name:"椰撻", image:"images/coconuttart.jpg", gallery:["images/coconuttart.jpg"], video:"", audio:"", origin:"港式撻類", ingredients:"酥皮、椰絲、椰蓉餡、蛋液、奶", method:"酥皮入模填椰蓉餡烤至金黃。", description:"表面酥脆，比蛋撻更厚實。", price:33 },
+  { id:20, name:"糖不甩", image:"images/tongbudlai.jpg", gallery:["images/tongbudlai.jpg"], video:"", audio:"", origin:"廣府年節甜品", ingredients:"糯米糰、花生粉、芝麻粉、糖漿", method:"糯米糰煮熟裹花生或芝麻粉淋糖漿。", description:"煙韌甜香，懷舊風味。", price:26 }
+];

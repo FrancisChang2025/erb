@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>全部商品｜香港懷舊小食</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="data/products.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="logo">Memories Corner</a>
+    <div class="nav-links">
+      <a href="products.html" class="active">全部商品</a>
+      <a href="cart.html" class="cart-link">購物車 <span id="nav-cart-count">0</span></a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>香港20大懷舊小食</h1>
+
+    <div class="filters">
+      <input id="search" type="text" placeholder="搜尋商品、成份、起源…" />
+      <select id="sort">
+        <option value="default">排序：預設</option>
+        <option value="price-asc">價格：低→高</option>
+        <option value="price-desc">價格：高→低</option>
+        <option value="name-asc">名稱：A→Z</option>
+        <option value="name-desc">名稱：Z→A</option>
+      </select>
+    </div>
+
+    <div id="product-list" class="grid"></div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Memories Corner</p>
+  </footer>
+</body>
+</html>

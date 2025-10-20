@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>商品詳情｜香港懷舊小食</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="data/products.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="logo">Memories Corner</a>
+    <div class="nav-links">
+      <a href="products.html">全部商品</a>
+      <a href="cart.html" class="cart-link">購物車 <span id="nav-cart-count">0</span></a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div id="product-detail" class="product-detail"></div>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" aria-label="關閉">×</button>
+      <img id="lightbox-img" alt="" />
+    </div>
+
+    <div id="videobox" class="videobox" aria-hidden="true">
+      <button class="videobox-close" aria-label="關閉">×</button>
+      <video id="videobox-el" controls playsinline></video>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Memories Corner</p>
+  </footer>
+</body>
+</html>
