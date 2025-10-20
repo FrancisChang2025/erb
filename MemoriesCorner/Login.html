@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Membership</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <a href="index.html" class="logo">Memories Corner</a>
+      <div class="nav-links">
+        <a href="products.html">全部商品</a>
+        <a href="cart.html" class="cart-link">購物車 <span id="nav-cart-count">0</span></a>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h2>Register</h2>
+        <form id="registerForm">
+          <input type="text" id="regUsername" placeholder="Username" required />
+          <input
+            type="password"
+            id="regPassword"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Register</button>
+        </form>
+
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input
+            type="text"
+            id="loginUsername"
+            placeholder="Username"
+            required
+          />
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Login</button>
+        </form>
+
+        <div id="message"></div>
+      </div>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>

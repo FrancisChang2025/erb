@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>香港懷舊小食精選｜Memories Corner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <head>
+      <img class="logo" src="./Logo.svg" alt="情迷小食" />
+      <nav class="navbar" class="language-selector">
+        <div><a href="index.html">Memories Corner</a></div>
+          <ul>
+            <li><a href="index.html" target="_blank">Home 首頁</a></li>
+            <li><a href="about.html" target="_blank">About 關於我們</a></li>
+            <li><a href="products.html" target="_blank">Products 全部商品</a></li>
+          </ul>
+      </nav>
+      <button class="btn btn-primary">
+        <a href="contact.html" target="_blank">聯絡我們</a>
+      </button>
+      <button class="btn btn-primary">
+        <a href="./Login.html" target="_blank">登入</a>
+      </button>
+      <button class="btn btn-primary">
+        <a href="cart.html" class="cart-link" target="_blank">購物車 <span id="nav-cart-count">0</span></a>
+      </button>
+    </head>
+
+    <section class="banner banner-media">
+      <video
+        class="banner-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="images/banner.jpg">
+        <!-- <source
+          src="https://www.chosic.com/download-audio/27306/"
+          type="Background Music"/> -->
+      </video>
+
+      <div class="banner-overlay"></div>
+      <div class="banner-content container">
+        <h1>情迷小食</h1>
+        <p>高質感圖片與影片、乾淨自然風格，職人精神與永續理念。</p>
+        <div class="banner-actions">
+          <a class="btn btn-primary" href="products.html" target="_blank">探索商品</a>
+          <button id="toggle-ambience" class="btn btn-secondary">播放環境音</button>
+          <audio id="song" autoplay loop >
+            <source src="./happy-clappy.mp3" >
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="productIntros container">
+        <h1>香港懷舊小食精選</h1><br>
+        <p id="slogan">一口小食，一段回憶 · A Bite, A Memory</p>
+
+        <div class="productIntro">
+          <h3>商品1</h3>
+          <p>起源、成份、做法、短片與語音導覽。</p>
+        </div>
+        <div class="productIntro">
+          <h3>商品2</h3>
+          <p>起源、成份、做法、短片與語音導覽。</p>
+        </div>
+        <div class="productIntro">
+          <h3>商品3</h3>
+          <p>起源、成份、做法、短片與語音導覽。</p>
+        </div>
+        <div class="productIntro">
+          <h3>商品4</h3>
+          <p>起源、成份、做法、短片與語音導覽。</p>
+        </div>
+      </section>
+
+      <section class="storys container">
+        <h2>品牌故事</h2>
+        <p>
+          用職人精神復刻香港經典小食，從食材來源到工序把關，兼顧風味與永續，讓每一口都承載記憶與安心。
+        </p>
+        <a class="btn btn-secondary" href="products.html">開始選購</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Memories Corner ｜ 情迷小食</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      if (localStorage.getItem("loggedInUser")) {
+        window.location.href="Dashboard.html";
+      }
+    </script>
+    <script>
+      window.addEventListener('click', () => {
+        document.getElementById("song").play();
+      })
+    </script>
+  </body>
+</html>
