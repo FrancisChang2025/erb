@@ -41,10 +41,11 @@ main {
 
 /* Nav */
 .navbar ul {
+  float: left;
   display: flex;
-  justify-content:space-evenly; /* separates left and right */
+  justify-content: center; /* separates left and right */
   /* align-items:left; */
-  list-style-type: style type;
+  align-items: center;
   background-color: #13795b;
   padding: 10px 20px;
   margin: 0px;
@@ -81,7 +82,24 @@ main {
 }
 
 .navbar li {
+  width: 100px;
+  height: 25px;
+  margin: 0px;
+  /* float: left; */
+}
+
+/* Company Logo */
+.logo {
+  color:#13795b;
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   float: left;
+}
+
+.menu {
+  width: 400px;
+  float: left;
+  height: 70px;
 }
 
 /* Slogan */
@@ -116,7 +134,7 @@ main {
 .banner-content {
   position:relative;
   z-index:1;
-  max-width:860px;
+  max-width:1000px;
   padding:24px;
 }
 

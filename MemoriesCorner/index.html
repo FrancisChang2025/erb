@@ -3,19 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>香港懷舊小食精選｜Memories Corner</title>
+    <title>情迷小食｜Memories Corner</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <head>
-      <img class="logo" src="./Logo.svg" alt="情迷小食" />
+    <div class="main">
       <nav class="navbar" class="language-selector">
-        <div><a href="index.html">Memories Corner</a></div>
+        <div class="logo">
+          <img class="logo" src="#" alt="情迷小食" /><a href="index.html">Memories Corner</a>
+        </div >
+
+        <div class="menu">
           <ul>
-            <li><a href="index.html" target="_blank">Home 首頁</a></li>
-            <li><a href="about.html" target="_blank">About 關於我們</a></li>
-            <li><a href="products.html" target="_blank">Products 全部商品</a></li>
+            <li><a href="index.html" target="_blank">首頁</a></li>
+            <li><a href="about.html" target="_blank">關於我們</a></li>
+            <li><a href="products.html" target="_blank">全部商品</a></li>
           </ul>
+        </div>
+
       </nav>
       <button class="btn btn-primary">
         <a href="contact.html" target="_blank">聯絡我們</a>
@@ -26,9 +31,9 @@
       <button class="btn btn-primary">
         <a href="cart.html" class="cart-link" target="_blank">購物車 <span id="nav-cart-count">0</span></a>
       </button>
-    </head>
+    </div>
 
-    <section class="banner banner-media">
+    <div class="banner banner-media">
       <video
         class="banner-video"
         autoplay
@@ -40,7 +45,7 @@
           src="https://www.chosic.com/download-audio/27306/"
           type="Background Music"/> -->
       </video>
-
+      
       <div class="banner-overlay"></div>
       <div class="banner-content container">
         <h1>情迷小食</h1>
@@ -53,7 +58,7 @@
           </audio>
         </div>
       </div>
-    </section>
+    </div>
 
     <main>
       <section class="productIntros container">
