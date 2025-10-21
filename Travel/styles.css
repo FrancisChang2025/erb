@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=LXGW+WenKai+Mono+TC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.root {
+  
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* <weight>: Use a value from 100 to 900
+<uniquifier>: Use a unique and descriptive class name */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Funnel Sans", Roboto, sans-serif;
+  font-optical-sizing: auto;
   margin: 0;
   padding: 0;
   background: #f0f8ff;
@@ -8,6 +24,7 @@ body {
 header {
   background-color: #ff4b5c;
   color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px;
   text-align: center;
 }
@@ -25,6 +42,30 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.5 ease;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: #222;
+}
+
+
+.logo {
+  position: relative;
+  width: 15vw;  /* 10% of the viewport width */
+  height: auto;
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.videoContainer {
+  
 }
 
 section {
